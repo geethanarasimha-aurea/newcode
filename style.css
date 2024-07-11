@@ -1,7 +1,5 @@
 @media only screen and (max-width: 1000px) {
-  body {
-    background-color: lightblue;
-  }
+  
   
   #viewerCanvas {
 width: 90% !important;
@@ -51,11 +49,15 @@ padding:0px 10px;
 
 
 .loader {
-  width: 50px;
+  width: 80px;
   aspect-ratio: 1.154;
   position: relative;
-  background: conic-gradient(from 120deg at 50% 64%,#0000, #25b09b 1deg 120deg,#0000 121deg);
+  background: conic-gradient(from 120deg at 50% 64%,#0000, #ab281f 1deg 120deg,#0000 121deg);
   animation: l27-0 1.5s infinite cubic-bezier(0.3,1,0,1);
+    vertical-align: center;
+  display: flex;
+  justify-content: center;
+    margin-left: 100px;
 }
 .loader:before,
 .loader:after {

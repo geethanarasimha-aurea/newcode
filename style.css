@@ -25,9 +25,9 @@ font-size:20px;
 
   #viewerCanvas {
 width: 92% !important;
-    height: 300px !important;
+    height: 600px !important;
     position: fixed;
-margin-top:-200px; !important;
+margin-top:-190px; !important;
 padding:0px !important;
 
 }
@@ -38,7 +38,7 @@ position:absolute !important;
     left:200px;
 width:350px;
 font-size:20px;
-    margin-top: -220px;
+    margin-top: -210px;
    
     }  
   

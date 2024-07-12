@@ -3,6 +3,9 @@
   #viewerCanvas {
 width: 350px !important;
     height: 900px !important;
+    position: fixed;
+margin-top:-50% !important;
+padding:0px !important;
 
 }
   

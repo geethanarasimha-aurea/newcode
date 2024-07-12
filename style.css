@@ -12,6 +12,7 @@ padding:0px !important;
   #option3d {
 position:absolute !important;
     top:-350px;
+    left:-100px;
 width:300px;
 font-size:30px;
     margin-top: -200px;

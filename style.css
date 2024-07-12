@@ -1,7 +1,7 @@
 @media only screen and (max-width: 500px) {
 
   #viewerCanvas {
-width: 90% !important;
+width: 95% !important;
     height: 680px !important;
     position: fixed;
 margin-top:-200px; !important;

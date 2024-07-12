@@ -17,16 +17,35 @@ width:350px;
 font-size:20px;
     margin-top: -220px;
    
-    
-
-
-}
-  
-  
-  
-  
+    }  
   
 }
+
+@media only screen and (max-width: 400px) {
+
+  #viewerCanvas {
+width: 92% !important;
+    height: 500px !important;
+    position: fixed;
+margin-top:-200px; !important;
+padding:0px !important;
+
+}
+
+  #option3d {
+position:absolute !important;
+    top:-360px;
+    left:200px;
+width:350px;
+font-size:20px;
+    margin-top: -220px;
+   
+    }  
+  
+}
+
+
+
 
 
 

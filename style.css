@@ -4,7 +4,7 @@
 width: 300px !important;
     height: 500px !important;
     position: fixed;
-margin-top:40% !important;
+margin-top:30% !important;
 padding:0px !important;
 
 }
@@ -12,7 +12,7 @@ padding:0px !important;
   #option3d {
 position:absolute !important;
     top:-350px;
-    left:-100px;
+    left:100px;
 width:300px;
 font-size:30px;
     margin-top: -200px;

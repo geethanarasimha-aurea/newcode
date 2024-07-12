@@ -1,4 +1,4 @@
-@media only screen and (min-width: 400px) and (max-width: 767px) {
+@media only screen and (min-width: 400px) and (max-width: 600px) {
 
   #viewerCanvas {
 width: 92% !important;
@@ -45,7 +45,7 @@ font-size:20px;
 }
 
 
-@media only screen and (min-width: 767px) and (max-width: 1000px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
 
   #viewerCanvas {
 width: 92% !important;

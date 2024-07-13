@@ -13,7 +13,7 @@ padding:0px !important;
 position:absolute !important;
     top:-360px;
     left:200px;
-width:360px;
+width:360px !important;
 font-size:20px;
     margin-top: -220px;
    
@@ -47,7 +47,7 @@ padding:0px !important;
 position:absolute !important;
     top:-315px;
     left:200px;
-width:315px;
+width:315px !important;
 font-size:20px;
     margin-top: 0px;
    
@@ -77,7 +77,7 @@ padding:0px !important;
 position:absolute !important;
     top:-655px;
     left:200px;
-width:360px;
+width:360px !important;
 font-size:20px;
     
    

@@ -37,7 +37,7 @@ font-size:20px;
   #viewerCanvas {
 width: 92% !important;
     height: 600px !important;
-    position: fixed;
+    position: fixed !important;
 
 padding:0px !important;
 

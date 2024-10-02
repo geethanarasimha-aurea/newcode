@@ -1,31 +1,149 @@
-
+<!--  Copyright by Bangaloreinfo.in -->
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>View 3D</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="text/javascript" src="lib/big.min.js"></script>
+    <script type="text/javascript" src="lib/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="lib/jszip.min.js"></script>
+    <script type="text/javascript" src="lib/core.min.js"></script>
+    <script type="text/javascript" src="lib/geom.min.js"></script>
+    <script type="text/javascript" src="lib/stroke.min.js"></script>
+    <script type="text/javascript" src="lib/batik-svgpathparser.min.js"></script>
+    <script type="text/javascript" src="lib/jsXmlSaxParser.min.js"></script>
+    <script type="text/javascript" src="lib/triangulator.min.js"></script>
+    <script type="text/javascript" src="lib/viewmodel.min.js"></script>
+    <script type="text/javascript" src="lib/viewhome.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+      }
 
+      .icon-bar {
+        width: 45px;
+        background-color: #555;
+        flot: left;
+        position: absolute;
+        top: -500px;
+        left: -50px;
+      }
 
-<link rel="stylesheet"  href="style.css" />
- <link rel="stylesheet"  href="lib/menustyle.css" />
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 26px;
+      }
 
-<style>
+      .icon-bar a:hover {
+        background-color: #000;
+      }
 
+      .active {
+        background-color: #04aa6d;
+      }
+    </style>
+  </head>
 
-
-
-
-
-</style>
-</head>
-
-<body>
-<div>
- 
-  <button            
-              })'>View home</button>
-</div>
-
-
-</body>
+  <body>
+    <div>
+      <button
+        onclick='view3dprintOverlay("3dprintmodels/RC0001.glb", 
+              {roundsPerMinute:    1,                               
+               widthByHeightRatio: 16/9,                            
+               navigationPanel: "none",                            
+                                                                      
+               aerialViewButtonText: "Aerial view",               
+               virtualVisitButtonText: "Walkthrough",            
+               activateCameraSwitchKey: true,                      
+               viewerControlsAdditionalHTML: "",                   
+               readingHomeText: "Reading",                         
+               readingModelText: "Model",                          
+               noWebGLSupportError: "No WebGL support"             
+              })'>
+        View 3D
+      </button>
+	  
+	 <p> aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr 
+	 </p>
+	 
+	 <button onclick='view3dprintOverlay("3dprintmodels/Horse.glb", 
+              {roundsPerMinute:    1,                               
+               widthByHeightRatio: 16/9,                            
+               navigationPanel: "none",                            
+                                                                      
+               aerialViewButtonText: "Aerial view",               
+               virtualVisitButtonText: "Walkthrough",            
+               activateCameraSwitchKey: true,                      
+               viewerControlsAdditionalHTML: "",                   
+               readingHomeText: "Reading",                         
+               readingModelText: "Model",                          
+               noWebGLSupportError: "No WebGL support"             
+              })' class="add-to-cart-btn"> 3D View</button>
+			  
+			  
+	<p> aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr 
+	 </p>
+	 
+	 <button onclick='view3dprintOverlay("3dprintmodels/Paris_tower.glb", 
+              {roundsPerMinute:    1,                               
+               widthByHeightRatio: 16/9,                            
+               navigationPanel: "none",                            
+                                                                      
+               aerialViewButtonText: "Aerial view",               
+               virtualVisitButtonText: "Walkthrough",            
+               activateCameraSwitchKey: true,                      
+               viewerControlsAdditionalHTML: "",                   
+               readingHomeText: "Reading",                         
+               readingModelText: "Model",                          
+               noWebGLSupportError: "No WebGL support"             
+              })' class="add-to-cart-btn">3D View</button>
+			  
+			  <p> aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr 
+	 </p>
+	 
+	 <button onclick='view3dprintOverlay("3dprintmodels/Pot.glb", 
+              {roundsPerMinute:    1,                               
+               widthByHeightRatio: 16/9,                            
+               navigationPanel: "none",                            
+                                                                      
+               aerialViewButtonText: "Aerial view",               
+               virtualVisitButtonText: "Walkthrough",            
+               activateCameraSwitchKey: true,                      
+               viewerControlsAdditionalHTML: "",                   
+               readingHomeText: "Reading",                         
+               readingModelText: "Model",                          
+               noWebGLSupportError: "No WebGL support"             
+              })' class="add-to-cart-btn"> 3D View</button>
+			  
+	<p> aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr aggsfsfgg jghgyf hfyfytf hjgyturut jgyrfytr 
+	 </p>
+	 
+	 <button onclick='view3dprintOverlay("3dprintmodels/RC0001.glb", 
+              {roundsPerMinute:    1,                               
+               widthByHeightRatio: 16/9,                            
+               navigationPanel: "none",                            
+                                                                      
+               aerialViewButtonText: "Aerial view",               
+               virtualVisitButtonText: "Walkthrough",            
+               activateCameraSwitchKey: true,                      
+               viewerControlsAdditionalHTML: "",                   
+               readingHomeText: "Reading",                         
+               readingModelText: "Model",                          
+               noWebGLSupportError: "No WebGL support"             
+              })' class="add-to-cart-btn"> 3D View</button>
+    </div>
+	
+  </body>
 </html>

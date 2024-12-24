@@ -1,16 +1,14 @@
 body {
     margin: 0;
-    height: 100vh;  /* Ensures full viewport height */
-    width: 100vw;   /* Ensures full viewport width */
 }
 
 .icon-bar {
     width: 45px;
     background-color: #555;
-    float: left;  /* Corrected from 'flot' */
+    float: left;
     position: absolute;
-    top: 0;  /* Adjusted from -500px to 0 to make it visible */
-    left: 0;
+    top: -500px;
+    left: 0px;
 }
 
 .icon-bar a {
@@ -31,5 +29,5 @@ body {
 }
 
 .icon-bar a.selected {
-    background-color: red;
+    background-color: red;  /* Change selected icon bar item to red */
 }
